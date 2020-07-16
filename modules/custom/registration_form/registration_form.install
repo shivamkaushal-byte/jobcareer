@@ -1,0 +1,44 @@
+<?php
+use Drupal\Core\Database\Database;
+
+function registration_form_schema() {
+  $schema['registration_form'] = array(
+    'description' => 'an example table',
+    'fields' => array(
+      'form_id' => array(
+        'description' => 'Primary Form ID',
+        'type' => 'serial',
+        'unsigned'=> TRUE,
+        'not null' => TRUE,
+      ),
+      'Description' => array(
+        'description' => 'profile description',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'resume' => array(
+        'description' => 'uploaded resume file',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'points' => array(
+        'description' => 'points given to user',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+
+      ),
+    ),
+    'primary key' => array(
+      'form_id',
+    ),
+  );
+  return $schema;
+
+
+}

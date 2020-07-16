@@ -1,0 +1,37 @@
+uuid: 66723585-ca43-4fff-8bda-532fe3be0bd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - registration_form
+    - user
+  theme:
+    - bartik
+id: buttonblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: buttonBlock
+settings:
+  id: buttonBlock
+  label: submit
+  provider: registration_form
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      job_opening: job_opening
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

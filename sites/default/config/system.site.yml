@@ -1,0 +1,14 @@
+uuid: 4a28c8b5-4f7f-4646-9451-afd39cfcafe6
+name: jobseeker
+mail: shivam.kaushal@srijan.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /list-of-jobs
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

@@ -1,0 +1,4 @@
+name: registration_form
+description: this is a registration form to register users profile
+type: module
+core: 8.x

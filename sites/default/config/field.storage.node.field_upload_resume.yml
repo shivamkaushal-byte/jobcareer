@@ -1,0 +1,23 @@
+uuid: 22c0f2c8-211a-48f7-96a7-18728735457b
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_upload_resume
+field_name: field_upload_resume
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

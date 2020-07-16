@@ -1,0 +1,36 @@
+uuid: c3ff1819-5475-4dbf-80b0-c1d600c5104a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_opening.body
+    - field.field.node.job_opening.field_comment
+    - field.field.node.job_opening.field_deadline_to_apply
+    - field.field.node.job_opening.field_upload_resume
+    - node.type.job_opening
+  module:
+    - text
+    - user
+id: node.job_opening.teaser
+targetEntityType: node
+bundle: job_opening
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_comment: true
+  field_deadline_to_apply: true
+  field_upload_resume: true

@@ -1,0 +1,27 @@
+registration_form.edit:
+  path: '/editsubmission/{uid}/{nid}'
+  defaults:
+    _form: '\Drupal\registration_form\Form\EditForm'
+    _title: 'EditForm'
+  requirements:
+    _role: 'authenticated'
+    _permission: 'access content'
+
+
+registration_form.button:
+  path: '/buttons'
+  defaults:
+    _form: '\Drupal\registration_form\Form\Formbutton'
+    _title: 'buttons'
+  requirements:
+    _role: 'authenticated'
+    _permission: 'access content'
+
+registration_form.form:
+  path: /registration/{nid}
+  defaults:
+    _form: '\Drupal\registration_form\Form\registrationformForm'
+    _title: 'registration form'
+  requirements:
+    _role: 'authenticated'
+    _permission: 'access content'

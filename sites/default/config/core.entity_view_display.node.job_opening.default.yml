@@ -1,0 +1,60 @@
+uuid: adf852a1-dc6e-43fb-a4f2-670b7f3c7330
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_opening.body
+    - field.field.node.job_opening.field_comment
+    - field.field.node.job_opening.field_deadline_to_apply
+    - field.field.node.job_opening.field_upload_resume
+    - node.type.job_opening
+  module:
+    - comment
+    - datetime
+    - file
+    - text
+    - user
+id: node.job_opening.default
+targetEntityType: node
+bundle: job_opening
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comment:
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_deadline_to_apply:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_upload_resume:
+    weight: 103
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

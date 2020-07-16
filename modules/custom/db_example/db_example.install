@@ -1,0 +1,51 @@
+<?php
+use Drupal\Core\Database\Database;
+
+function db_example_schema() {
+  $schema['db_example'] = array(
+    'description' => 'an example table',
+    'fields' => array(
+      'form_id' => array(
+        'description' => 'Primary Form ID',
+        'type' => 'serial',
+        'unsigned'=> TRUE,
+        'not null' => TRUE,
+      ),
+      'Full_name' => array(
+        'description' => 'Full_name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'Email' => array(
+        'description' => 'Email',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'DOB' => array(
+        'description' => 'date of birth',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'gender' => array(
+        'description' => 'gender',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+
+      ),
+    ),
+    'primary key' => array(
+      'form_id',
+    ),
+  );
+  return $schema;
+
+
+}

@@ -1,0 +1,27 @@
+uuid: d1e05b3d-9cf4-4ea6-a50b-42efd1d2c5db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upload_resume
+    - node.type.job_opening
+  module:
+    - file
+id: node.job_opening.field_upload_resume
+field_name: field_upload_resume
+entity_type: node
+bundle: job_opening
+label: 'upload resume'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: '5 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

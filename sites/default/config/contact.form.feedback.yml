@@ -1,0 +1,14 @@
+uuid: 9f6c17d9-6c3f-471e-9199-ac0ac5be7014
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - shivam.kaushal@srijan.net
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

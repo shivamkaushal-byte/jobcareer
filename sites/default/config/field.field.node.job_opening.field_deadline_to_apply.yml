@@ -1,0 +1,21 @@
+uuid: 3ecc223b-5c93-4a71-a505-c8666098e86e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deadline_to_apply
+    - node.type.job_opening
+  module:
+    - datetime
+id: node.job_opening.field_deadline_to_apply
+field_name: field_deadline_to_apply
+entity_type: node
+bundle: job_opening
+label: 'Deadline to apply'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

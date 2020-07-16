@@ -1,0 +1,28 @@
+uuid: 65dc335a-9966-44b6-af61-5680041ae28e
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+    - registration_form
+  theme:
+    - bartik
+id: registrationformblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: registrationformBlock
+settings:
+  id: registrationformBlock
+  label: 'Registration Form'
+  provider: registration_form
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      job_opening: job_opening
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
