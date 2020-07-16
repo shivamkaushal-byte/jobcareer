@@ -1,0 +1,4 @@
+name: db example
+description: this module is for database example
+type: module
+core: 8.x

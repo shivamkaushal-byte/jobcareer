@@ -1,0 +1,47 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Form\FormBase;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Database\Database;
+use Drupal\Core\Url;
+
+// function registration_form_node_view(NodeInterface $node, $langcode = NULL) {
+//   kint($node);
+// }
+/**
+ * Implement of additional form submit
+ */
+// function additional_node_form_submit($form, &$form_state) {
+//   // ...
+// }
+// function registration_form_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+// kint($form_id);
+// }
+//   if($form_id == 'node_job_opening_form') {
+//     $form['actions']['submit'] = array(
+//       '#type' => 'submit',
+//       '#value' => t('apply'),
+//       '#submit' => array('registration_form_submit_redirect'),
+//       '#limit_validation_errors' => array(),
+//       '#attributes' => array(
+//         'class' => array('form-request'),
+//         'title' => array(t('request for registration form to apply for this job')),
+//       ),
+//       '#weight' => 2,
+//     );
+//   }
+//
+//
+// function registration_form_submit_redirect(&$form, &$form_state) {
+//   // sometimes it seems to fail
+//   //$form_state['redirect'] = 'user/password';
+//
+//   // alternative method to redirect
+//   $options['absolute'] = TRUE;
+//
+//   $url = url('editsubmission/1', $options);
+//
+//   header('Location: ' . $url);
+//
+//   drupal_exit($url);
+// }

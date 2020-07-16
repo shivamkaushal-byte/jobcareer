@@ -1,0 +1,19 @@
+This file will let you know about the functionalities and working of this project
+
+step-1:created a content type name job opening and created the fields 'description','title of job'( by default), 'deadline to apply'(date),and 'comments' so that user can comments on particular post.
+
+step-2: created a view page of job opening content type and addup the 'title' and 'description' fields and make this  page as front page, so that when you openup the site it will first show you a table mentioning job title and its description.
+
+step-3:created a custom module name 'registration_form' under this module i created 3 forms one for registration ,one for edit form and last one is only for 'apply button'.
+
+setp4: call that last form which has only apply button in a block and place that block on node of type job opening. so when you openup any job post then there will an apply button  so a user can apply for it.
+
+step5:first if user is not logged in then he cant see that apply button and he cant make comments on job post as well,if user will try to open the registration form directly from url then it shows access denied, so user must have to login first.
+
+setp6: after login a user can see job posts and can apply for the same, when a user click on apply button for the first time then a registration form will get open and there user can mention about himself and can upload his resume. NOTE: resume field only accepts pdf file format.
+
+setp7: if a user has already applied for particular job n click on apply button then it will redirect to edit form with a display message that "you have already applied for this job" here user will see his data in fields and can update them.
+
+step 8: because of this step 7 a particular user cannot apply again for the same job,he can only update his profile. 
+
+
